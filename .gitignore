@@ -1,0 +1,5 @@
+# Исключить файл .env
+.env
+
+# Исключить папку node_modules
+node_modules/

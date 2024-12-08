@@ -1,0 +1,97 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #15098264;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .title{
+    color: white;
+    font-size: 30px;
+    font-family: montserrat;
+  }
+  
+  .visible {
+    transform: translateX(0);
+  }
+  
+  .hidden {
+    transform: translateX(-300px);
+  }
+  
+  .sidebarContent {
+    padding: 20px;
+  }
+  
+  .toggleBtn {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    color: white;
+    background: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: montserrat;
+    cursor: pointer;
+  }
+  
+.burger__menu {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+}
+
+  .historyList {
+    list-style: none;
+    padding: 0;
+  }
+
+ 
+  
+  .historyList li {
+    margin-top: 20px;
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .historyList li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .noHistory {
+    color: #b0b0b0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+  }
+  
+  .clearHistoryBtn {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ff4747;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .clearHistoryBtn:hover {
+    background-color: #ff3030;
+    transform: scale(1.05);
+  }
+  

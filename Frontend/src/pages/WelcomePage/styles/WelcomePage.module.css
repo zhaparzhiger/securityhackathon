@@ -1,0 +1,52 @@
+
+
+.welcome__page__container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome__page__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.welcome__page__text__block {
+    line-height: 45px;
+}
+
+.text__block__one {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.text__block__two {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.text__block__three {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.button__block__btn {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 50px;
+}

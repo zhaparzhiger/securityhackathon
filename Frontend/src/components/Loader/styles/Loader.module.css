@@ -1,0 +1,91 @@
+
+.loader__block {
+  position: relative;
+}
+
+
+
+.loader {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: rgba(76, 157, 207, 0.5);
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  right: -48px;
+  z-index: 1;
+}
+
+.loader__text {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: white;
+  right: -100px;
+}
+
+.dot__one {
+  animation-name: dot_animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.dot__two {
+  animation-name: dot_animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.dot__three {
+  animation-name: dot_animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.loader__text {
+  animation-name: text_animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text_animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes dot_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1.2) translateY(30px);
+    background-color: rgba(240, 85, 209, 0.7);
+  }
+  50% {
+    transform: scale(1) translateY(-30px);
+    background-color: rgba(85, 240, 240);
+  }
+  100% {
+    transform: scale(1.2) translateY(30px);
+    background-color: rgba(240, 85, 209);
+  }
+}
